@@ -11,7 +11,7 @@ def hello_world():  # put application's code here
 
 
 # 根据form表单的text数据进行预测
-@app.route('/predict', methods=['POST'])
+@app.route('/api/v1/predict', methods=['POST'])
 def predict():
     # 获取输入的文本
     text = request.form['text']
